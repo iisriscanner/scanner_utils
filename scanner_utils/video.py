@@ -1,6 +1,15 @@
 import cv2
 from pathlib import Path
 
+# Convert framest to timecode MM:SS:MS
+def frames_to_TC(fps, frames):
+    h = int(frames / (fps * 3600)) 
+    m = int(frames / (fps*60)) % 60 
+    s = int(frames / fps % 60) 
+    f = frames % fps
+    time = ("%02d:%02d:%02d:%02d" % ( h, m, s, f))
+    return time[3:]
+
 def get_details(video_path):
     VIDEO_PATH = Path(video_path) if isinstance(video_path, str) else video_path
     
