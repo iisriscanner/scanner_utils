@@ -5,7 +5,7 @@ NAME = "scanner_utils"
 
 setuptools.setup(
     name=NAME,
-    version="1.1.0",
+    version="1.2.0",
     author="Leo Saif",
     description="Genarate frames from video",
     long_description=Path("README.md").read_text(),
@@ -13,5 +13,5 @@ setuptools.setup(
     url=f"https://github.com/iisriscanner/{NAME}",
     license="MIT",
     packages=[f"{NAME}"],
-    install_requires=["opencv-python"],
+    install_requires=["opencv-python", "Pillow"],
 )
