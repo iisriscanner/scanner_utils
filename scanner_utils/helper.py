@@ -4,6 +4,8 @@ import platform
 from datetime import datetime
 from pathlib import Path
 
+def flatten(input_list):
+    return [item for sublist in input_list for item in sublist]
 
 def fix_path(path):
     if platform.system().lower() == 'windows':
@@ -16,7 +18,6 @@ def get_files(path, extensions):
     for ext in extensions:
         all_files.extend(Path(path).glob(f"*.{ext}"))
     return all_files
-
 
 
 def get_time_date_now():
