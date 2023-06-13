@@ -5,7 +5,7 @@ NAME = "scanner_utils"
 
 setuptools.setup(
     name=NAME,
-    version="1.2.0",
+    version="1.2.1",
     author="Leo Saif",
     description="Genarate frames from video",
     long_description=Path("README.md").read_text(),
