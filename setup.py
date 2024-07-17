@@ -5,9 +5,9 @@ NAME = "scanner_utils"
 
 setuptools.setup(
     name=NAME,
-    version="1.2.1",
+    version="1.2.2",
     author="Leo Saif",
-    description="Genarate frames from video",
+    description="Utilities functions for Scanner Project",
     long_description=Path("README.md").read_text(),
     long_description_content_type="text/markdown",
     url=f"https://github.com/iisriscanner/{NAME}",
